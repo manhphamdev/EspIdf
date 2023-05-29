@@ -35,7 +35,7 @@ char keypad_detect(keypad_cols_t col);
 
 char keypad_getkey();
 
-void check_password(char* keyBuffer, char* defaultPassword)
+void check_password(char* keyBuffer, char* defaultPassword);
 
 
 #endif

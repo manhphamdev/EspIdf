@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 # Set the project name
-project(main)
+project(sample_project)
 
 # Add the ESP-IDF components
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
@@ -15,6 +15,3 @@ set(COMPONENT_ADD_INCLUDEDIRS common/include)
 
 # Add the common directory to the list of extra components
 set(EXTRA_COMPONENT_DIRS common)
-
-# Create the project
-project(${COMPONENT_NAME})

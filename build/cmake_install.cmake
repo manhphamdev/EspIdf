@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/main")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/sample_project")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,13 +29,7 @@ endif()
 
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "TRUE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/Users/PhamH/OneDrive/Desktop/Manhph6_project/sample_project/build/esp-idf/cmake_install.cmake")
-
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
